@@ -206,6 +206,11 @@ cactus run Cactus-Compute/needle [--tools my_tools.json]  # OpenAI function-call
 │ sudo apt-get install python3.12 python3.12-venv python3-pip cmake              │
 │   build-essential libcurl4-openssl-dev                                         │
 │                                                                                │
+│ Step 0b: if building for Android                                               │
+│ brew install android-ndk  # macOS                                              │
+│ export ANDROID_NDK_HOME="/opt/homebrew/share/android-ndk"                      │
+│ # or: ANDROID_NDK_HOME=$HOME/Library/Android/sdk/ndk/26.0.0                    │
+│                                                                                │
 │ Step 1: clone and setup                                                        │
 │ git clone https://github.com/cactus-compute/cactus && cd cactus                │
 │ source ./setup                                                                 │
